@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/33787/Desktop/Omar/Projects/fraud-detection/model/train/mlruns/472709400362859321/ab522171b3e049c784390ce31dcef162/artifacts
+end_time: 1747401723090
+entry_point_name: ''
+experiment_id: '472709400362859321'
+lifecycle_stage: active
+run_id: ab522171b3e049c784390ce31dcef162
+run_name: bedecked-vole-882
+run_uuid: ab522171b3e049c784390ce31dcef162
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747401717506
+status: 3
+tags: []
+user_id: '33787'

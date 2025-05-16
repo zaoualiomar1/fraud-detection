@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/33787/Desktop/Omar/Projects/fraud-detection/mlruns/715371407854268821/9c4c6dc54b584c68a1b0fc97fc12daa5/artifacts
+end_time: 1747400973942
+entry_point_name: ''
+experiment_id: '715371407854268821'
+lifecycle_stage: active
+run_id: 9c4c6dc54b584c68a1b0fc97fc12daa5
+run_name: serious-gull-811
+run_uuid: 9c4c6dc54b584c68a1b0fc97fc12daa5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747400968773
+status: 3
+tags: []
+user_id: '33787'

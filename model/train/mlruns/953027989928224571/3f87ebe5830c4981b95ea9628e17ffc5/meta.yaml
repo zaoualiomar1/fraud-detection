@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/33787/Desktop/Omar/Projects/fraud-detection/model/train/mlruns/953027989928224571/3f87ebe5830c4981b95ea9628e17ffc5/artifacts
+end_time: 1747401535961
+entry_point_name: ''
+experiment_id: '953027989928224571'
+lifecycle_stage: active
+run_id: 3f87ebe5830c4981b95ea9628e17ffc5
+run_name: intrigued-crane-888
+run_uuid: 3f87ebe5830c4981b95ea9628e17ffc5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747401530517
+status: 3
+tags: []
+user_id: '33787'
