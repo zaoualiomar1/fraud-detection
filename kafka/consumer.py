@@ -2,9 +2,11 @@ import numpy as np
 import joblib
 import json
 from kafka import KafkaConsumer
+import mlflow 
 
-model = joblib.load(r"C:\Users\33787\Desktop\Omar\Projects\fraud-detection\model\model_trained\model.pkl")
+# model = joblib.load(r"C:\Users\33787\Desktop\Omar\Projects\fraud-detection\model\model_trained\model.pkl")
 scaler = joblib.load(r"C:\Users\33787\Desktop\Omar\Projects\fraud-detection\model\model_trained\scaler.pkl")
+model = mlflow.pyfunc.load_model("models:/fraud-detector-model/Production")
 
 consumer = KafkaConsumer(
     'transactions',
