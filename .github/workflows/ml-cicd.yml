@@ -24,6 +24,15 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      
+      - name: Download dataset from kaggle 
+        run: |
+          pip install kaggle 
+          python model/train/mlruns/download_dataset.py
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+
 
       - name: Train and log model to MLflow
         run: |
