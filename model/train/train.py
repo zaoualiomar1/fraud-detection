@@ -44,11 +44,11 @@ with mlflow.start_run() :
     
 
 
-# Saving the model after prediction 
-print('Saving the model and the scaler -- -')
-joblib.dump(model, r"C:\Users\33787\Desktop\Omar\Projects\fraud-detection\model\model_trained\model.pkl")
-# joblib.dump(scaler, r"C:\Users\33787\Desktop\Omar\Projects\fraud-detection\model\model_trained\scaler.pkl")
-print('Model and scaler saved sucessufully!! -- -')
+# # Saving the model after prediction 
+# print('Saving the model and the scaler -- -')
+# joblib.dump(model, r"C:\Users\33787\Desktop\Omar\Projects\fraud-detection\model\model_trained\model.pkl")
+# # joblib.dump(scaler, r"C:\Users\33787\Desktop\Omar\Projects\fraud-detection\model\model_trained\scaler.pkl")
+# print('Model and scaler saved sucessufully!! -- -')
 
 
 
