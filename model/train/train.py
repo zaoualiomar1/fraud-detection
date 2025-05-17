@@ -10,7 +10,8 @@ import joblib
 
 ## Push  
 # Reading the data 
-df = pd.read_csv(r"C:\Users\33787\Desktop\Omar\Projects\fraud-detection\data\raw-data\creditcard.csv")
+# df = pd.read_csv(r"C:\Users\33787\Desktop\Omar\Projects\fraud-detection\data\raw-data\creditcard.csv")
+df = pd.read_csv('data/raw-data/creditcard.csv')
 
 # Data preparation 
 X = df.drop(columns=['Class'])
