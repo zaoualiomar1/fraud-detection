@@ -27,6 +27,6 @@ jobs:
 
       - name: Train and log model to MLflow
         run: |
-          python model/train.py
+          python model/train/train.py
         env:
           MLFLOW_TRACKING_URI: http://your-mlflow-server:5000
