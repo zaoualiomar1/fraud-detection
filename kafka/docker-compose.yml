@@ -32,3 +32,14 @@ services:
       KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
     depends_on:
       - kafka
+    
+  consumer: 
+    build: 
+      context: ./kafka 
+      dockerfile: ../consumer/Dockerfile
+    depends_on:
+      - kafka
+    environment:
+      - MLFLOW_TRACKING_URI: http://mlflow:5000
+      - MODEL_NAME: fraud-detector-model=value
+    restart: unless-stopped
