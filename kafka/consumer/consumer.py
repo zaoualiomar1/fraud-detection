@@ -3,10 +3,16 @@ import joblib
 import json
 from kafka import KafkaConsumer
 import mlflow 
+import os 
 
 # model = joblib.load(r"C:\Users\33787\Desktop\Omar\Projects\fraud-detection\model\model_trained\model.pkl")
 scaler = joblib.load(r"C:\Users\33787\Desktop\Omar\Projects\fraud-detection\model\model_trained\scaler.pkl")
-model = mlflow.pyfunc.load_model("models:/fraud-detector-model/Production")
+mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+model_name = os.getenv("MODEL_NAME", "fraud-detector-model")
+model = mlflow.pyfunc.load_model(f"models:/{model_name}/Production")
+
+
+# model = mlflow.pyfunc.load_model("models:/fraud-detector-model/Production")
 
 consumer = KafkaConsumer(
     'transactions',
